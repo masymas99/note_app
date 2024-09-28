@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:semsar/views/widgets/custom_app_bar.dart';
 import 'package:semsar/views/widgets/notes_items.dart';
 
-class NodesViewBody extends StatelessWidget {
-  const NodesViewBody({Key? key}) : super(key: key);
+class noteViewBody extends StatelessWidget {
+  const noteViewBody({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,9 +14,22 @@ class NodesViewBody extends StatelessWidget {
             height: 20,
           ),
           const CustomAppBar(),
-          NoteItem()
+          Expanded(child: NotesListView())
         ],
       ),
+    );
+  }
+}
+
+class NotesListView extends StatelessWidget {
+  const NotesListView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemBuilder: (BuildContext context, int index) {
+        return NoteItem();
+      },
     );
   }
 }

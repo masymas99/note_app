@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:semsar/views/widgets/nodes_view_body.dart';
+import 'package:semsar/views/widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
   const NotesView({Key? key}) : super(key: key);
@@ -7,7 +7,11 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: NodesViewBody(),
+      body: noteViewBody(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
