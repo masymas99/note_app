@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:semsar/views/notes_view.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+import 'package:semsar/views/notes_view.dart';
+import 'package:semsar/views/widgets/constans.dart';
+
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox(kNotesBox);
+
   runApp(const NotesApp());
 }
 
