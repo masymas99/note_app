@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:semsar/views/widgets/custom_botton.dart';
 import 'package:semsar/views/widgets/custom_text_field.dart';
 
 class AddNoteBottonSheet extends StatelessWidget {
@@ -22,7 +23,9 @@ class AddNoteBottonSheet extends StatelessWidget {
           CustomTextField(
             hint: 'content',
             maxlines: 5,
-          )
+          ),
+          SizedBox(height: 46),
+          CustomBotton(),
         ],
       ),
     );

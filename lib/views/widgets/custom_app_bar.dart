@@ -32,7 +32,7 @@ class CustomSearshIcon extends StatelessWidget {
       width: 45,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: const Color.fromARGB(255, 95, 84, 84),
+        color: const Color.fromARGB(255, 107, 103, 103),
       ),
       child: Icon(
         Icons.search,

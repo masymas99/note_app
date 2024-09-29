@@ -6,23 +6,23 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 12),
+      padding: const EdgeInsets.only(top: 6),
       child: Container(
         decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 115, 174, 19),
+            color: const Color.fromARGB(255, 151, 119, 75),
             borderRadius: BorderRadius.circular(16)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
               title: Text(
-                'Note 1',
-                style: TextStyle(color: Colors.black, fontSize: 24),
+                'Note tips',
+                style: TextStyle(color: Colors.black, fontSize: 20),
               ),
               subtitle: Text(
                 'This is a note',
                 style: TextStyle(
-                    color: const Color.fromARGB(255, 58, 55, 55), fontSize: 18),
+                    color: const Color.fromARGB(255, 58, 55, 55), fontSize: 16),
               ),
               trailing: IconButton(
                   onPressed: () {},
